@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import { useSelector} from 'react-redux';
 import axios from 'axios'
-import { Container, Row, Col } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
 import parse from 'html-react-parser';
-import NotifUpgradePro from './NotifUpgradePro';
 
-function ContentRequestconnect() {
+import NotifUpgradePro from './NotifUpgradePro';
+import Loading from '../../components/Parts/loading'
+
+function ContentRequestconnect(props) {
     const id = useSelector(state => state.Auth._id)
-    const [data, setData] = useState([])
+    const [data, setData] = useState('')
 
     const getRequestConnect = async (ID) => {
         await axios.post(`${process.env.REACT_APP_API_URL}/request_connect`, {id : ID} )
@@ -28,6 +28,18 @@ function ContentRequestconnect() {
         }
     }, [id])
 
+    const renderContent = () => {
+        if(props.item === "FREE"){
+            return (
+                <NotifUpgradePro></NotifUpgradePro>
+            )
+        } else {
+            return (
+                <Loading></Loading>
+            )
+        }
+    }
+
     return (
         <div className="wrap-dashboard-content-section-page">
             <div className="wrap-dashboard-content-section-page-in">
@@ -44,7 +56,7 @@ function ContentRequestconnect() {
                             })
                         }
                     </div>
-                    : <NotifUpgradePro></NotifUpgradePro>
+                    : renderContent()
                 }
             </div>
         </div>

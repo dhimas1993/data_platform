@@ -5,9 +5,8 @@ import Swal from 'sweetalert2'
 import { Redirect } from 'react-router-dom'
 
 export const loginUser = (payload) => (dispatch) => {
-    console.log(`${process.env.REACT_APP_WEB_URL}`)
     return (
-        axios.post(`http://cms-dataplatform.herokuapp.com/v1/users/login`, payload, {
+        axios.post(`${process.env.REACT_APP_API_URL}/login`, payload, {
             "access-control-allow-origin": "*",
             "Content-type": "application/json; charset=UTF-8"
         })

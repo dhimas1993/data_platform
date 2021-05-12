@@ -62,12 +62,12 @@ class Menutop extends Component {
                         <div className="wrap-main-menu-desktop">
                             <ul className="main-menu-dekstop">
                                 <li><Link to="/pricing">Pricing</Link></li>
+                                <li className="bt-login-bt"><a target="_blank" href="https://api.whatsapp.com/send?phone=6281218990565&text=Hallo%20Startupindonesia%20Team">Contact Us</a></li>
                                 {
                                     this.state.id !== "" 
-                                    ? <li onClick={() => this.onButtonClick()} className="bt-login-bt"><Link to="/login">Logout</Link></li>
-                                    : <li className="bt-login-bt"><Link to="/login">Login</Link></li>
+                                    ? <li onClick={() => this.onButtonClick()} className="bt-try-for-free "><Link to="/login">Logout</Link></li>
+                                    : <li className="bt-try-for-free"><Link to="/login">Login</Link></li>
                                 }
-                                <li className="bt-try-for-free"><Link to="/">Try for Free</Link></li>
                             </ul>
                         </div>
                         {/* menu bar mobile */}
@@ -85,12 +85,12 @@ class Menutop extends Component {
                         <div className="main-menu-mobile">
                             <ul>
                                 <li><Link to="/pricing">Pricing</Link></li>
+                                <li className="custom-bt-mn-mob2 "><a target="_blank" href="https://api.whatsapp.com/send?phone=6281218990565&text=Hallo%20Startupindonesia%20Team">Contact Us</a></li>
                                 {
                                     this.state.id !== "" 
-                                    ? <li onClick={() => this.onButtonClick()} className="custom-bt-mn-mob2"><Link to="/login">Logout</Link></li>
-                                    : <li className="custom-bt-mn-mob2"><Link to="/login">Login</Link></li>
+                                    ? <li onClick={() => this.onButtonClick()} className="custom-bt-mn-mob"><Link to="/login">Logout</Link></li>
+                                    : <li className="custom-bt-mn-mob"><Link to="/login">Login</Link></li>
                                 }
-                                <li className="custom-bt-mn-mob"><Link to="/">Try for Free</Link></li>
                             </ul>
                         </div>
                     </div>

@@ -53,19 +53,20 @@ function BoxPricing() {
                             Free
                         </h3>
                         <h4 className="heading-title-box-price-tag-pg2">
-                            Asses your dealflow with "decision making" data point.
+                            
                         </h4>
                         <div className="tab-item-box-pricing-number-p">
                             <div className="item-pricing-box-number-p1">Rp 0</div>
                             <div className="item-pricing-box-number-p2">/ month</div>
                             <div className="item-pricing-box-number-p3"></div>
                         </div>
-                        <Link to="#" className="bt-bt-cta-pricing-tb">Try for Free</Link>
+                        <Link to="/login" className="bt-bt-cta-pricing-tb">Try for Free</Link>
                         <div className="title-info-pricing-benefits"></div>
                         <div className="wrap-list-benefits-pricing-table">
                             <ul className="list-benefits-pricing-table">
-                                <li>Access to 5 startups per week</li>
-                                <li>Access to SID Investability Point</li>
+                                <li>Access to 5 new Startups per week</li>
+                                <li>Limited Data Points</li>
+                                <li>Access to SID Investability Points</li>
                             </ul>
                         </div>
                         <div className="wrap-learn-more-bt-table-pricing"></div>
@@ -76,7 +77,7 @@ function BoxPricing() {
                             Pro
                         </h3>
                         <h4 className="heading-title-box-price-tag-pg2">
-                            Asses your dealflow with "decision making" data point.
+                            Capture opportunities with exclusive data points.
                         </h4>
                         <div className="tab-item-box-pricing-number-p">
                             <div className="item-pricing-box-number-p1">Rp 1.500.000</div>
@@ -87,11 +88,11 @@ function BoxPricing() {
                         <div className="title-info-pricing-benefits"></div>
                         <div className="wrap-list-benefits-pricing-table">
                             <ul className="list-benefits-pricing-table">
-                                <li>Unlimited startup database</li>
-                                <li>Access to SID Investability Point</li>
-                                <li>Access to new dealflow every week</li>
-                                <li>Generate Investment Memos</li>
-                                <li>Include access detail of all data points (traction, contact founder, meeting log, etc)</li>
+                                <li>Early Access to new deal flows per month</li>
+                                <li>All-access to our Startup database</li>
+                                <li>Unlimited access to all Data Points (Traction, Contact Founder, Meeting Log, Etc)</li>
+                                <li>Access to SID Investability Points</li>
+                                <li>Automatically generate Investment Memos</li>
                             </ul>
                         </div>
                         <div className="wrap-learn-more-bt-table-pricing"></div>
@@ -102,28 +103,28 @@ function BoxPricing() {
                             Enterprise
                         </h3>
                         <h4 className="heading-title-box-price-tag-pg2">
-                            Asses your dealflow with "decision making" data point.
+                            For Investors looking to customize SID Investability Point and managing their data warehouse.
                         </h4>
                         <div className="tab-item-box-pricing-number-p">
                             <div className="item-pricing-box-number-p1">Custom</div>
                             <div className="item-pricing-box-number-p2"></div>
                             <div className="item-pricing-box-number-p3"></div>
                         </div>
-                        <Link to="#" className="bt-bt-cta-pricing-tb">Contact Sales</Link>
+                        <a href="https://api.whatsapp.com/send?phone=6281218990565&text=Hallo%20Startupindonesia%20Team" className="bt-bt-cta-pricing-tb">Contact Sales</a>
                         <div className="title-info-pricing-benefits">
-                            All the benefits of Pro Plan, and :
+                            All the benefits of Pro plan, plus:
                         </div>
                         <div className="wrap-list-benefits-pricing-table">
                             <ul className="list-benefits-pricing-table">
-                                <li>Manage Inbound Proposal</li>
-                                <li>Custom Investability Point</li>
-                                <li>Dedicated Account Manager</li>
-                                <li>Customized Report and Dashboard</li>
+                                <li>Manage your inbound proposal</li>
+                                <li>Customize the Investability Points to your investment thesis </li>
+                                <li>A dedicated Account Manager</li>
+                                <li>Customizable Report and Dashboard</li>
                             </ul>
                         </div>
-                        <div className="wrap-learn-more-bt-table-pricing">
+                        {/* <div className="wrap-learn-more-bt-table-pricing">
                             <Link to="#" className="bt-Learn-more-tab-pricing">Learn More</Link>
-                        </div>
+                        </div> */}
                     </div>
                     <div className="clear"></div>
                 </div>

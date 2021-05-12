@@ -12,9 +12,9 @@ class Contactusection extends Component {
             <div>
                 <div className="wrap-section-contact-us-link" style={backgroundstyle}>
                     <h3 className="title-section-contact-us-link">
-                        Hack your growth with Startupindonesia now
+                        Want to get your startup highlighted ?
                     </h3>
-                    <Link to="/" className="bt-cta-header-home2">Contact Us</Link>
+                    <a target="_blank" href="https://api.whatsapp.com/send?phone=6281218990565&text=Hallo%20Startupindonesia%20Team" className="bt-cta-header-home2">Click Here</a>
                 </div>
             </div >
         )

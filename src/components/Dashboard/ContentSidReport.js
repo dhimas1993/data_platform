@@ -1,15 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import { useSelector} from 'react-redux';
 import axios from 'axios'
-import { Container, Row, Col } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
 import Sidreport from '../../images/sidreport.png'
 import logosid from '../../images/lgsid.png'
 import NotifUpgradePro from './NotifUpgradePro';
 
 import pdf from '../../images/StartupIndonesia Report - Q1 2021.pdf'
+import Loading from '../../components/Parts/loading'
 
-function ContentSidReport () {
+function ContentSidReport (props) {
     const id = useSelector(state => state.Auth._id)
     const [data, setData] = useState([])
 
@@ -31,11 +30,22 @@ function ContentSidReport () {
         }
     }, [id])
 
+    const renderContent = () => {
+        if(props.item === "FREE"){
+            return (
+                <NotifUpgradePro></NotifUpgradePro>
+            )
+        } else {
+            return (
+                <Loading></Loading>
+            )
+        }
+    }
+    
     return (
         <div className="wrap-dashboard-content-section-page">
             <div className="wrap-dashboard-content-section-page-in">
-                {/* <NotifUpgradePro></NotifUpgradePro> */}
-                {
+                {   
                     data[0] !== undefined ?
                     <div className="wrap-content-tab-database-table">
                         <h3 className="heading-title-sid-report-page">
@@ -68,7 +78,7 @@ function ContentSidReport () {
                             </div>
                         </div>
                     </div>
-                    : <NotifUpgradePro></NotifUpgradePro>
+                    : renderContent()
                 }
             </div>
         </div>

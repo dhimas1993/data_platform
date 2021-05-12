@@ -1,10 +1,6 @@
 import React, { Component } from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Row, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import Tab from 'react-bootstrap/Tab'
-import Nav from 'react-bootstrap/Nav'
-import parse from 'html-react-parser';
-import NotifUpgradePro from './NotifUpgradePro';
 import Logosid from '../../images/logo.png'
 import morph from '../../images/morphicon.png'
 import karyakarsa from '../../images/karyakarsaicon.png'
@@ -19,8 +15,6 @@ import ml6 from '../../images/ml6.png'
 
 class ContentDashboard extends Component {
     render() {
-        const iframe = parse('<iframe class="airtable-embed" src="https://airtable.com/embed/shrYgNDc27QMC1kFg?backgroundColor=grayLight&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>');
-        const iframe2 = parse('<iframe class="airtable-embed" src="https://airtable.com/embed/shruwLDT1frO8EPIh?backgroundColor=grayLight&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>');
         return (
             <div>
                 <div className="wrap-dashboard-content-section-page">

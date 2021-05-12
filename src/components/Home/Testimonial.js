@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import OwlCarousel from 'react-owl-carousel2';
 import ava1 from '../../images/avatar1.png'
+import ava2 from '../../images/avatar2.jpeg'
+import ava3 from '../../images/avatar3.jpeg'
 
 class Testimonial extends Component {
     componentDidMount() {
@@ -10,16 +12,22 @@ class Testimonial extends Component {
     render() {
         const data = [
             {
-                testimonial: "I can pack a week's worth of meeting into two hours. Thanks, StartupIndonesia!",
-                username: 'Nazier Arifin',
-                position: 'Head of Strategic Investment TMI',
+                testimonial: `StartupIndonesia also goes one step further by providing the SID points as a helpful benchmark of each startup's performance. `,
+                username: 'Natasha Gunawan',
+                position: `Engagement Manager Monk's Hill Ventures`,
                 avatar: ava1
             },
             {
-                testimonial: "Lorem ipsum dolor sit amet",
-                username: 'anonymous',
-                position: 'lprem lorem',
-                avatar: ava1
+                testimonial: `StartupIndonesia has managed to help us discover great startups and founders which are not on our radar yet`,
+                username: 'Alvin Evander',
+                position: `GM of Corporate Development MDI Venture`,
+                avatar: ava2
+            },
+            {
+                testimonial: `It was great! So far it has been very helpful. Solving the VC's pain points`,
+                username: 'Ilman Dzikri ',
+                position: `Investment Associate Alpha JWC`,
+                avatar: ava3
             }
         ]
         

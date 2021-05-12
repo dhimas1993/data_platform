@@ -2,48 +2,45 @@ import React, {Component} from 'react';
 
 const data = [
     {
-        title: 'Which plan is right for me?',
-        paragraph: 'To get our platform’s full benefits, our premium plan will give you unlimited ' +
-                'access to the Venture Capital directory, the chance to pitch to investors, ext' +
-                'ra slots to our monthly Online Speed Dating, mentoring sessions with experts i' +
-                'n the tech field, pitch deck consultation, and strategic calls with StartupInd' +
-                'onesia. However, before committing, you can try our free plan which gives you ' +
-                'access to 25 Venture Capital directories and one strategy call with StartupInd' +
-                'onesia.'
+        title: 'How do I raise my SID points?',
+        paragraph: `SID Points are renewed every quarter. To assure that SID points can accurately represent the company at any given point,
+        we advise founders to renew their pitch deck according to their company’s milestone as often as possible. This ensures that
+        SID Points are the most accurate representation that reflects the most recent performance of a company.`
     }, {
-        title: 'Is getting the plan guarantee for us to pitch to investor?',
-        paragraph: 'Our Premium plan will increase your chances of pitching to investors due to St' +
-                'artupIndonesia’s referral, under the condition that you have passed StartupInd' +
-                'onesia’s curation. We also have a monthly Online Speed Dating session that wil' +
-                'l guarantee your slot(s) to pitch to investors once you passed the curation'
+        title: 'How can I get SID Points for my company?',
+        paragraph: `SID Points are only available for companies that pass StartupIndonesia’s curation process. To request your company’s SID
+        Points please contact us at erwin.arifin@bubu.com`
     }, {
-        title: 'Is there a succession fee?',
-        paragraph: 'Yes, StartupIndonesia will receive 2.5% success fee off total funding raised o' +
-                'nly if the introduction happened through our platform'
+        title: 'How are SID Points calculated?',
+        paragraph: `SID Points are derived from the metrics preferred by early stage Investors. This is a combination of a few factors including;
+        founder’s background, market size, industry growth, traction, existing funding`
     }, {
-        title: 'How will mentoring work?',
-        paragraph: 'The mentoring program is only available for the 3 months and 12 months plan. Y' +
-                'ou can pick the mentor from our list at an available schedule. The hour-long m' +
-                'entoring session will be held once every 3 months.'
+        title: 'What is an SID Point?',
+        paragraph: `SID Points is an index that scores the likelihood for startups to receive equity and debt financing from Venture Capitals,
+        Private Equities, or other non-bank financial providers`
     }, {
-        title: 'Who can view my pitchdeck?',
-        paragraph: 'Once you have been curated by StartupIndonesia, Investors can see your pitch d' +
-                'eck.'
+        title: 'What companies are curated by StartupIndonesia?',
+        paragraph: `800 startups have been curated on the platform across 30+ sectors. The coverage includes early stage startups all across
+        Indonesia`
     }, {
-        title: 'How can PitchUp help me raise fund?',
-        paragraph: 'PitchUp will help you raise funds by giving you referrals to Venture Capitals,' +
-                ' monthly Online Speed Dating, feedback for your pitch deck and provide you wit' +
-                'h opportunities to consult experts through our mentoring sessions.'
+        title: 'What are the data points available for a company?',
+        paragraph: `A large number of data points can be viewed such as their SID Points, founders, startup stage, startup location, industry,
+        traction, market size, industry growth and business model`
     }, {
-        title: 'Can Startup Indonesia invest in my company?',
-        paragraph: 'Yes! StartupIndonesia has an Angel Investor fund managed together with MDI Ven' +
-                'tures. By joining, you will also get access to all the Angel Investors inside ' +
-                'our platform. '
+        title: 'Are SID Points up to date?',
+        paragraph: `SID Points are renewed every quarter and users can see the last updated date.`
     }, {
-        title: 'What if I fundraise outside of PitchUp',
-        paragraph: 'Good for you! However, we can not refund your subscription fee. This means you' +
-                ' can still claim mentoring sessions with experts and expand your network throu' +
-                'gh the founders community,'
+        title: 'What is the source for this data?',
+        paragraph: `All the data points collected in SID has come from a primary data source, this means that we receive all data exclusively
+        from the founders of the business itself`
+    }, {
+        title: 'What should I do if the company of my interest is not curated on StartupIndonesia’s platform?',
+        paragraph: `You can request a company of your interest to be scored by StartupIndonesia by contacting us at erwin.arifin@bubu.com`
+    }, {
+        title: 'What is the minimum threshold for a company to be included in SID?',
+        paragraph: `The minimum score for inclusion is an SID Point of 2.5, this is because we apply a thorough curation process for all
+        companies that apply. This method is to ensure that the quality of startups that gets displayed to Investors are above an SID
+        point of 2.5`
     }
 ]
 

@@ -5,7 +5,7 @@ export const Subscribe = async (ID) => {
     return await axios.post(`${process.env.REACT_APP_API_URL}/subscribe/`, { id: ID })
         .then(res => {
             console.log("SUCCESS SUBSCRIBE")
-            Swal.fire(`${res.data}`, 'Thanks, my team will connect with you !!', 'success')
+            Swal.fire(`Thanks`, 'Thanks, my team will connect with you !!', 'success')
         }).catch((err) => {
             console.log(err.message)
         })
@@ -16,8 +16,8 @@ export const Register = async (data) => {
         .then((res) => {
             if (res.data !== 'FAIL') {
                 Swal.fire({
-                    title: 'Ready to login ?',
-                    text: "You ready for the jorurney",
+                    title: 'Your Account is Ready',
+                    text: "Please Check Your Email",
                     icon: 'success',
                     showCancelButton: true,
                     confirmButtonColor: '#3085d6',

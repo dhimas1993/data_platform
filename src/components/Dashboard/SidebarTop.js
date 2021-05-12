@@ -29,7 +29,7 @@ function SidebarTop(props) {
     const onButtonClick = async () => {
        await dispatch(logoutUser)
     }
-
+    
     return (
         <div>
             <div className="wrap-sidebar-top-dashboard-menu-page">

@@ -1,23 +1,19 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios'
-import {useSelector, useDispatch} from 'react-redux'
+import {useSelector} from 'react-redux'
 import Tab from 'react-bootstrap/Tab'
 import Nav from 'react-bootstrap/Nav'
 import parse from 'html-react-parser';
-import NotifUpgradePro from './NotifUpgradePro';
 
 function ContentDataBase(){
     const id = useSelector(state => state.Auth._id)
     const [data, setData] = useState([])
-    const [tabid, setTabid] = useState(0)
 
     // console.log(id)
     const getDatabase = async (ID) => {
         await axios.post(`${process.env.REACT_APP_API_URL}/database`, {id : ID} )
         .then(res => {
-            // console.log(res.data[0]._id)
             setData(res.data)
-            setTabid(res.data[0]._id)
         }).catch((err) => {
             console.log(err.message)
         })

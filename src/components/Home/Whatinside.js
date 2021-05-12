@@ -43,11 +43,11 @@ class Whatinside extends Component {
                                                 Find Investment
                                             </h2>
                                             <h4 className="subtitle-tab-item-our-solution">
-                                                Asses your dealflow with "decision making" data point.
+                                                Assess your dealflow faster with our "decision making data points"
                                             </h4>
                                             <ul className="list-checklist-item-our-solution">
                                                 <li className="item-list-check-our-solution">
-                                                    <h3 className="title-name-our-solution">New Deal Flow coming in every week</h3>
+                                                    <h3 className="title-name-our-solution">New weekly dealflow</h3>
                                                 </li>
                                                 <li className="item-list-check-our-solution">
                                                     <h3 className="title-name-our-solution">30+ Industries and Sectors</h3>

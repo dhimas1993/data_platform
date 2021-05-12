@@ -25,13 +25,25 @@ function Login (){
     };
     
     useEffect(() => {
+        $(".show-password, .hide-password").on('click', function() {
+            var passwordId = $(".ipassword input");
+            if ($(this).hasClass('show-password')) {
+                $(passwordId).attr("type", "text");
+                $(this).parent().find(".show-password").hide();
+                $(this).parent().find(".hide-password").show();
+            } else {
+                $(passwordId).attr("type", "password");
+                $(this).parent().find(".hide-password").hide();
+                $(this).parent().find(".show-password").show();
+            }
+        });
         const loggedInUser = localStorage.getItem('user');
         if (loggedInUser) {
             const foundUser = JSON.parse(loggedInUser);
             setUser(foundUser);
         }
     }, [])
-    // console.log(state)
+    
     if(state !== ""){
         return <Redirect to='/' />
     }
@@ -70,15 +82,15 @@ function Login (){
                                         <span className="hide-password">Hide</span>
                                     </div>
                                 </div>
-                                <div className="cta-forgot-password">
+                                {/* <div className="cta-forgot-password">
                                     <Link to="/forgotpassword">Forgot Password ?</Link>
-                                </div>
+                                </div> */}
                             </div>
                             {/* <!-- login --> */}
-                            <div className="item-form-login-i">
+                            <div className="item-form-login-i mt-4 mb-4">
                                 <input onClick={() => handleSubmit()} type="submit" value="Login" className="submit-login-f"/>
                             </div>
-                            <div className="item-form-login-i">
+                            {/* <div className="item-form-login-i">
                                 <h3 className="text-or">OR</h3>
                             </div>
                             <div className="item-form-login-i">
@@ -90,7 +102,7 @@ function Login (){
                                 <h3 className="text-cant-login">
                                     <Link to="/forgotpassword">Can't Login?</Link>
                                 </h3>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                 </div>
