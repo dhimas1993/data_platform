@@ -45,7 +45,7 @@ function NotifUpgradePro() {
                             <h3 className="head-title-text-pro-plan-c">
                                 To have unrestricted access to all the paid feature please upgrade
                             </h3>
-                            <a href="" style={{color: 'white'}} onClick={() => onHandleClick()} className="bt-upgrade-pro-plan-cta">Upgrade</a>
+                            <a style={{color: 'white'}} onClick={() => onHandleClick()} className="bt-upgrade-pro-plan-cta">Upgrade</a>
                         </div>
                     </div>
                 </div>

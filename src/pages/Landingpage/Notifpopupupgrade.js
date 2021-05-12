@@ -21,7 +21,7 @@ class Notifpopupupgrade extends Component {
                                     <h3 className="head-title-text-pro-plan-c">
                                         To have unrestricted access to all the paid feature please upgrade
                                     </h3>
-                                    <Link to="#" className="bt-upgrade-pro-plan-cta">Upgrade</Link>
+                                    <a className="bt-upgrade-pro-plan-cta">Upgrade</a>
                                 </div>
                             </div>
                         </div>
