@@ -2714,7 +2714,7 @@ h3.title-dashboard-meta-top-sidebar{
     top: 0;
     display: table;
     width: 100%;
-    height: 100%;
+    height: 100vh;
 }
 .wrap-pro-plan-section-upgrade-in{
     display: table-cell;
