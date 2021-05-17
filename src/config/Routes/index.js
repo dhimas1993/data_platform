@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react'
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import { BrowserRouter as Router, Redirect, Route, Switch } from 'react-router-dom'
 import { useSelector, useDispatch } from 'react-redux'
 
 import Home from '../../pages/Landingpage/Home'
@@ -65,7 +65,7 @@ const Routes = (props) => {
                 ) : (
                     <Switch>
                         <Route exact path="/">
-                            <Home></Home>
+                            <Redirect to="/database" />
                         </Route>
                         <Route path="/pricing">
                             <Pricing></Pricing>
@@ -82,9 +82,6 @@ const Routes = (props) => {
                         <Route path="/notifpopupupgrade">
                             <Notifpopupupgrade></Notifpopupupgrade>
                         </Route>
-                        {/* <Route path="/dashboard">
-                            <Dashboard></Dashboard>
-                        </Route> */}
                         <Route path="*">
                             <ErrorPage></ErrorPage>
                         </Route>

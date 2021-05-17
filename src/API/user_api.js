@@ -5,7 +5,7 @@ export const Subscribe = async (ID) => {
     return await axios.post(`${process.env.REACT_APP_API_URL}/subscribe/`, { id: ID })
         .then(res => {
             console.log("SUCCESS SUBSCRIBE")
-            Swal.fire(`Thanks`, 'Thanks, my team will connect with you !!', 'success')
+            Swal.fire(`Thank you for your request `, 'Our team will contact you shortly', 'success')
         }).catch((err) => {
             console.log(err.message)
         })

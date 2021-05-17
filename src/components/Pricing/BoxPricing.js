@@ -23,9 +23,7 @@ function BoxPricing() {
             })
         } else {
             Swal.fire({
-                icon: 'error',
-                title: 'Oops...',
-                text: 'Please Login before subscribes !!',
+                title: 'You need to sign in to subscribe',
                 showDenyButton: true,
                 confirmButtonText: `Login`,
                 denyButtonText: `Cancel`,
@@ -60,7 +58,7 @@ function BoxPricing() {
                             <div className="item-pricing-box-number-p2">/ month</div>
                             <div className="item-pricing-box-number-p3"></div>
                         </div>
-                        <Link to="/login" className="bt-bt-cta-pricing-tb">Try for Free</Link>
+                        <Link to="/pricing" className="bt-bt-cta-pricing-tb">Try for Free</Link>
                         <div className="title-info-pricing-benefits"></div>
                         <div className="wrap-list-benefits-pricing-table">
                             <ul className="list-benefits-pricing-table">

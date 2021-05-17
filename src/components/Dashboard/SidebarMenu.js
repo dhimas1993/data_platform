@@ -49,7 +49,8 @@ function SidebarMenu() {
     const onHandleClick = () => {
         if(id){
             Swal.fire({
-                title: 'Are you sure to subscribe ?',
+                title: 'Do you want to upgrade to Pro Plan ?',
+                text: 'Upgrade to pro plan to access more features such as early access to new deal flows, unlimited access to all data points, and more.',
                 showDenyButton: true,
                 confirmButtonText: `Subscribe`,
                 denyButtonText: `Cancel`,
