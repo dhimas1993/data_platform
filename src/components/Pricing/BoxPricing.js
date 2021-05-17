@@ -58,7 +58,7 @@ function BoxPricing() {
                             <div className="item-pricing-box-number-p2">/ month</div>
                             <div className="item-pricing-box-number-p3"></div>
                         </div>
-                        <Link to="/pricing" className="bt-bt-cta-pricing-tb">Try for Free</Link>
+                        <Link to="/login" className="bt-bt-cta-pricing-tb">Try for Free</Link>
                         <div className="title-info-pricing-benefits"></div>
                         <div className="wrap-list-benefits-pricing-table">
                             <ul className="list-benefits-pricing-table">
