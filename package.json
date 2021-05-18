@@ -17,6 +17,7 @@
     "react-anchor-link-smooth-scroll": "^1.0.12",
     "react-bootstrap": "^1.4.3",
     "react-dom": "^17.0.1",
+    "react-ga": "^3.3.0",
     "react-marquee-slider": "^1.1.2",
     "react-owl-carousel2": "^0.3.0",
     "react-redux": "^7.2.4",

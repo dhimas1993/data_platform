@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react'
 import { BrowserRouter as Router, Redirect, Route, Switch } from 'react-router-dom'
 import { useSelector, useDispatch } from 'react-redux'
+import ReactGA from 'react-ga';
 
 import Home from '../../pages/Landingpage/Home'
 import Login from '../../pages/Landingpage/Login'
@@ -14,6 +15,7 @@ import Notifpopupupgrade from '../../pages/Landingpage/Notifpopupupgrade'
 import Dashboard from '../../pages/Dashboard/Dashboard'
 import ConfirmationEmail from '../../components/Parts/ConfirmationEmail'
 import ErrorPage from '../../components/Parts/404'
+import withPageView from '../../components/Parts/withPageView'
 
 const Routes = (props) => {
     const [Session, setSession] = useState(null)
@@ -26,7 +28,8 @@ const Routes = (props) => {
 
     useEffect(() => {
         const objCookie = JSON.parse(localStorage.getItem('user'))
-        // console.log(JSON.parse(localStorage.getItem('user')))
+        // google analutics
+        ReactGA.initialize('G-NF3LEQ72W2')
         if (objCookie !== null) {
             {_login(objCookie)}
             setSession(objCookie)
@@ -40,24 +43,12 @@ const Routes = (props) => {
             {
                 Session == null ? (
                     <Switch>
-                        <Route exact path="/">
-                            <Home></Home>
-                        </Route>
-                        <Route path="/login">
-                            <Login></Login>
-                        </Route>
-                        <Route path="/forgotpassword">
-                            <ForgotPassword></ForgotPassword>
-                        </Route>
-                        <Route path="/confirmation-email/:id">
-                            <ConfirmationEmail></ConfirmationEmail>
-                        </Route>
-                        <Route path="/signup">
-                            <Signup></Signup>
-                        </Route>
-                        <Route path="/pricing">
-                            <Pricing></Pricing>
-                        </Route>
+                        <Route exact path="/" component={withPageView(Home)} />
+                        <Route path="/login" component={withPageView(Login)} />
+                        <Route path="/forgotpassword" component={withPageView(ForgotPassword)} />
+                        <Route path="/confirmation-email/:id" component={withPageView(ConfirmationEmail)} /> 
+                        <Route path="/signup" component={withPageView(Signup)} /> 
+                        <Route path="/pricing" component={withPageView(Pricing)} />
                         <Route path="*">
                             <ErrorPage></ErrorPage>
                         </Route>
@@ -67,21 +58,10 @@ const Routes = (props) => {
                         <Route exact path="/">
                             <Redirect to="/database" />
                         </Route>
-                        <Route path="/pricing">
-                            <Pricing></Pricing>
-                        </Route>
-                        <Route path="/database">
-                            <Database></Database>
-                        </Route>
-                        <Route path="/requestconnect">
-                            <Requestconnect></Requestconnect>
-                        </Route>
-                        <Route path="/sidreport">
-                            <SidReport></SidReport>
-                        </Route>
-                        <Route path="/notifpopupupgrade">
-                            <Notifpopupupgrade></Notifpopupupgrade>
-                        </Route>
+                        <Route exact path="/pricing" component={withPageView(Pricing)} />
+                        <Route exact path="/database" component={withPageView(Database)} />
+                        <Route exact path="/requestconnect" component={withPageView(Requestconnect)} />
+                        <Route exact path="/sidreport" component={withPageView(SidReport)} />
                         <Route path="*">
                             <ErrorPage></ErrorPage>
                         </Route>
