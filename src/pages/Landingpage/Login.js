@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link, Redirect } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux'
 import { loginUser } from '../../store/actions/auth'
+import mixpanel from 'mixpanel-browser';
 
 import Logo from '../../images/logosid.png'
 import Logogoogle from '../../images/google.jpg'
@@ -37,6 +38,8 @@ function Login (){
                 $(this).parent().find(".show-password").show();
             }
         });
+        mixpanel.init("a0fa51cd1c34fefd617384953be96c67");
+        mixpanel.track("Video play", {"genre": "hip-hop", "duration in seconds": 42});
         const loggedInUser = localStorage.getItem('user');
         if (loggedInUser) {
             const foundUser = JSON.parse(loggedInUser);

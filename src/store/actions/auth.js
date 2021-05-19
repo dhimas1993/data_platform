@@ -1,10 +1,12 @@
 import { LOGIN } from '../constants/types'
 import axios from 'axios'
+import mixpanel from 'mixpanel-browser';
 
 import Swal from 'sweetalert2'
 import { Redirect } from 'react-router-dom'
 
 export const loginUser = (payload) => (dispatch) => {
+    mixpanel.init('a0fa51cd1c34fefd617384953be96c67');
     return (
         axios.post(`${process.env.REACT_APP_API_URL}/login`, payload, {
             "access-control-allow-origin": "*",
@@ -31,10 +33,12 @@ export const loginUser = (payload) => (dispatch) => {
                         type: LOGIN,
                         payload: res.data
                     })
+                    mixpanel.track("Video play", {"genre": "hip-hop", "duration in seconds": 42});
                     localStorage.setItem('user', JSON.stringify(res.data))
                     window.location.replace(`${process.env.REACT_APP_WEB_URL}/database`);
                 }
             }).catch((err) => {
+                mixpanel.track("Video play", {"genre": "hip-hop", "duration in seconds": 42});
                 Swal.fire({
                     type: 'error',
                     title: 'Oops...',

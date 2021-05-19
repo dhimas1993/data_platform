@@ -2,6 +2,7 @@ import React, {useEffect, useState} from 'react'
 import { BrowserRouter as Router, Redirect, Route, Switch } from 'react-router-dom'
 import { useSelector, useDispatch } from 'react-redux'
 import ReactGA from 'react-ga';
+import mixpanel from 'mixpanel-browser';
 
 import Home from '../../pages/Landingpage/Home'
 import Login from '../../pages/Landingpage/Login'
@@ -27,6 +28,7 @@ const Routes = (props) => {
     })}
 
     useEffect(() => {
+        mixpanel.init('a0fa51cd1c34fefd617384953be96c67');
         const objCookie = JSON.parse(localStorage.getItem('user'))
         // google analutics
         ReactGA.initialize('UA-197471659-1')
