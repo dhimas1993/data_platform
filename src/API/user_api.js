@@ -37,7 +37,11 @@ export const Register = async (data) => {
                 })
             }
         }).catch((error) => {
-            alert(error.message)
+            Swal.fire({
+                icon: 'info',
+                title: 'Oops...',
+                text: 'Please complete the mandatory field',
+            })
         })
 }
 

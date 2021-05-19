@@ -103,14 +103,14 @@ function Signup() {
                             </div>
                             {/* <!-- fullname --> */}
                             <div className="item-form-login-i">
-                                <h4 className="form-input-login-desc">Company Name</h4>
+                                <h4 className="form-input-login-desc">Company Name <span>*</span></h4>
                                 <div className="i-input-form-login icompany">
                                     <input onChange={e => setCompanyName(e.target.value)} type="text" placeholder="Insert Full Name"/>
                                 </div>
                             </div>
                             {/* <!-- fullname --> */}
                             <div className="item-form-login-i">
-                                <h4 className="form-input-login-desc">Job Position</h4>
+                                <h4 className="form-input-login-desc">Job Position <span>*</span></h4>
                                 <div className="i-input-form-login ijobpos">
                                     <input onChange={e => setJobPosition(e.target.value)} type="text" placeholder="Insert Full Name"/>
                                 </div>
