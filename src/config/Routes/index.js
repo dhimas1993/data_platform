@@ -29,7 +29,7 @@ const Routes = (props) => {
     useEffect(() => {
         const objCookie = JSON.parse(localStorage.getItem('user'))
         // google analutics
-        ReactGA.initialize('G-NF3LEQ72W2')
+        ReactGA.initialize('UA-197471659-1')
         if (objCookie !== null) {
             {_login(objCookie)}
             setSession(objCookie)
