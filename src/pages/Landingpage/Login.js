@@ -39,7 +39,7 @@ function Login (){
             }
         });
         mixpanel.init("a0fa51cd1c34fefd617384953be96c67");
-        mixpanel.track("Video play", {"genre": "hip-hop", "duration in seconds": 42});
+        mixpanel.track("login page");
         const loggedInUser = localStorage.getItem('user');
         if (loggedInUser) {
             const foundUser = JSON.parse(loggedInUser);
