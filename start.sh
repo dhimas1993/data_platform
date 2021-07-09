@@ -1,3 +1,3 @@
 #!/bin/bash
-cd staging/frontend/cms-data_platform
+cd /home/nodejs/data_platform
 yarn start

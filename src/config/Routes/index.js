@@ -10,6 +10,7 @@ import ForgotPassword from '../../pages/Landingpage/ForgotPassword'
 import Signup from '../../pages/Landingpage/Signup'
 import Pricing from '../../pages/Landingpage/Pricing'
 import Database from '../../pages/Dashboard/Database'
+import Captable from '../../pages/Dashboard/Captable'
 import Requestconnect from '../../pages/Dashboard/Requestconnect'
 import SidReport from '../../pages/Dashboard/SidReport'
 import Notifpopupupgrade from '../../pages/Landingpage/Notifpopupupgrade'
@@ -62,6 +63,7 @@ const Routes = (props) => {
                         </Route>
                         <Route exact path="/pricing" component={withPageView(Pricing)} />
                         <Route exact path="/database" component={withPageView(Database)} />
+                        <Route exact path="/captable" component={withPageView(Captable)} />
                         <Route exact path="/requestconnect" component={withPageView(Requestconnect)} />
                         <Route exact path="/sidreport" component={withPageView(SidReport)} />
                         <Route path="*">

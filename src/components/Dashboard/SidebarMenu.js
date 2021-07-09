@@ -96,6 +96,9 @@ function SidebarMenu() {
                         <li class={routes == "/requestconnect"?"active":""}>
                             <Link to="/requestconnect"><i className="fa fa-phone"></i> Request Connect</Link>
                         </li>
+                        <li class={routes == "/captable"?"active":""}>
+                            <Link to="/captable"><i className="fa fa-phone"></i> Cap Table</Link>
+                        </li>
                     </ul>
                 </div>
                 {
