@@ -4,6 +4,7 @@ import axios from 'axios'
 import parse from 'html-react-parser';
 
 import NotifUpgradePro from './NotifUpgradePro';
+import NotifDisableContent from './NotifDisableContent';
 import Loading from '../../components/Parts/loading'
 
 function ContentRequestconnect(props) {
@@ -13,7 +14,7 @@ function ContentRequestconnect(props) {
     const getRequestConnect = async (ID) => {
         await axios.post(`${process.env.REACT_APP_API_URL}/request_connect`, {id : ID} )
         .then(res => {
-            // console.log(res.data[0]._id)
+            console.log(res.data)
             setData(res.data)
         }).catch((err) => {
             console.log(err.message)
@@ -29,14 +30,24 @@ function ContentRequestconnect(props) {
     }, [id])
 
     const renderContent = () => {
-        if(props.item === "FREE"){
+        if(props.item === "FREE" ){
             return (
                 <NotifUpgradePro></NotifUpgradePro>
             )
         } else {
-            return (
-                <Loading></Loading>
-            )
+            if(data[0] == undefined && props.item === "PRO"){
+                return (
+                    <NotifDisableContent></NotifDisableContent>
+                )
+            } else if(data[0] == undefined && props.item === "ENTERPRISE") {
+                return (
+                    <NotifDisableContent></NotifDisableContent>
+                )
+            } else {
+                return (
+                    <Loading></Loading>
+                )
+            }
         }
     }
 

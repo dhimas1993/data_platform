@@ -6,6 +6,7 @@ import Nav from 'react-bootstrap/Nav'
 import parse from 'html-react-parser';
 
 import NotifUpgradePro from './NotifUpgradePro';
+import NotifDisableContent from './NotifDisableContent';
 import Loading from '../../components/Parts/loading'
 
 function ContentDataBase(props){
@@ -33,14 +34,24 @@ function ContentDataBase(props){
     }, [id])
 
     const renderContent = () => {
-        if(props.item === "FREE"){
+        if(props.item === "FREE" ){
             return (
                 <NotifUpgradePro></NotifUpgradePro>
             )
         } else {
-            return (
-                <Loading></Loading>
-            )
+            if(data[0] == undefined && props.item === "PRO"){
+                return (
+                    <NotifDisableContent></NotifDisableContent>
+                )
+            } else if(data[0] == undefined && props.item === "ENTERPRISE") {
+                return (
+                    <NotifDisableContent></NotifDisableContent>
+                )
+            } else {
+                return (
+                    <Loading></Loading>
+                )
+            }
         }
     }
     

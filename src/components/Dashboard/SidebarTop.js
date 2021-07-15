@@ -8,7 +8,7 @@ function SidebarTop(props) {
     const id = useSelector(state => state.Auth._id)
     const [user, setUser] = useState('')
     const dispatch = useDispatch()
-
+    
     useEffect(() => {
         if(id === ''){
             return true

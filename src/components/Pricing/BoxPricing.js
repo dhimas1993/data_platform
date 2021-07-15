@@ -108,7 +108,8 @@ function BoxPricing() {
                             <div className="item-pricing-box-number-p2"></div>
                             <div className="item-pricing-box-number-p3"></div>
                         </div>
-                        <a href="https://api.whatsapp.com/send?phone=6281218990565&text=Hallo%20Startupindonesia%20Team" className="bt-bt-cta-pricing-tb">Contact Sales</a>
+                        {/* <a href="https://api.whatsapp.com/send?phone=6281218990565&text=Hallo%20Startupindonesia%20Team" className="bt-bt-cta-pricing-tb">Get Started</a> */}
+                        <a onClick={() => onHandleClick()}  className="bt-bt-cta-pricing-tb" style={{color: 'white'}}>Get Started</a>
                         <div className="title-info-pricing-benefits">
                             All the benefits of Pro plan, plus:
                         </div>

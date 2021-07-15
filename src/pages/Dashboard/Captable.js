@@ -12,7 +12,7 @@ function Captable(props) {
     return (
         <div>
             <SidebarMenu></SidebarMenu>
-            <SidebarTop textmenupage="Captable"></SidebarTop>
+            <SidebarTop textmenupage="Financial data"></SidebarTop>
             <ContentCaptable></ContentCaptable>
         </div>
     )
