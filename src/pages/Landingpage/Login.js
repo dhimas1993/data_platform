@@ -85,9 +85,9 @@ function Login (){
                                         <span className="hide-password">Hide</span>
                                     </div>
                                 </div>
-                                {/* <div className="cta-forgot-password">
+                                <div className="cta-forgot-password">
                                     <Link to="/forgotpassword">Forgot Password ?</Link>
-                                </div> */}
+                                </div>
                             </div>
                             {/* <!-- login --> */}
                             <div className="item-form-login-i mt-4 mb-4">

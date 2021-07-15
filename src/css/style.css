@@ -3138,6 +3138,24 @@ h3.heading-title-box-meeting-log-c-sec-1{
     -webkit-animation: spin 2s linear infinite; /* Safari */
     animation: spin 2s linear infinite;
   }
+
+.main-menu-sidebar-dashboard-database li a{
+    position: relative;
+}
+
+span.newsec {
+    position: absolute;
+    top: 0;
+    right: -38px;
+    font-size: 9px;
+    color: #fff;
+    background: red;
+    border-radius: 4px;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-bottom: 1px;
+    font-weight: bold;
+}
   
   /* Safari */
   @-webkit-keyframes spin {

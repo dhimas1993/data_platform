@@ -8,6 +8,7 @@ import prover from '../../images/prover.png'
 import $ from 'jquery';
 
 import {Subscribe} from '../../API/user_api'
+import ifinancialdata from '../../images/ifinancialdata.png'
 
 
 function SidebarMenu() {
@@ -97,7 +98,12 @@ function SidebarMenu() {
                             <Link to="/requestconnect"><i className="fa fa-phone"></i> Request Connect</Link>
                         </li>
                         <li class={routes == "/captable"?"active":""}>
-                            <Link to="/captable"><i className="fa fa-phone"></i> Cap Table</Link>
+                            <Link to="/captable">
+                                <i class="fa fa-money"></i>
+                                {/* <img className={{style=""}} src={ifinancialdata}></img> */}
+                                <span class="newsec">New</span>
+                                Financial Data
+                            </Link>
                         </li>
                     </ul>
                 </div>

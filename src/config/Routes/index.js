@@ -7,6 +7,7 @@ import mixpanel from 'mixpanel-browser';
 import Home from '../../pages/Landingpage/Home'
 import Login from '../../pages/Landingpage/Login'
 import ForgotPassword from '../../pages/Landingpage/ForgotPassword'
+import ConfirmationPassword from '../../pages/Landingpage/ConfirmationPassword'
 import Signup from '../../pages/Landingpage/Signup'
 import Pricing from '../../pages/Landingpage/Pricing'
 import Database from '../../pages/Dashboard/Database'
@@ -50,6 +51,7 @@ const Routes = (props) => {
                         <Route path="/login" component={withPageView(Login)} />
                         <Route path="/forgotpassword" component={withPageView(ForgotPassword)} />
                         <Route path="/confirmation-email/:id" component={withPageView(ConfirmationEmail)} /> 
+                        <Route path="/confirmation-password/:id" component={withPageView(ConfirmationPassword)} /> 
                         <Route path="/signup" component={withPageView(Signup)} /> 
                         <Route path="/pricing" component={withPageView(Pricing)} />
                         <Route path="*">
