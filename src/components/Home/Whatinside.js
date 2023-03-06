@@ -59,7 +59,7 @@ class Whatinside extends Component {
                                                     <h3 className="title-name-our-solution">Access to 800+ early stage startups</h3>
                                                 </li>
                                             </ul>
-                                            <Link to="/pricing" className="bt-cta-header-home1">Try for Free</Link>
+                                            <Link to="/login" className="bt-cta-header-home1">Try for Free</Link>
                                         </div>
                                         <div className="clear"></div>
                                     </div>

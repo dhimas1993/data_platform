@@ -53,7 +53,6 @@ const Routes = (props) => {
                         <Route path="/confirmation-email/:id" component={withPageView(ConfirmationEmail)} /> 
                         <Route path="/confirmation-password/:id" component={withPageView(ConfirmationPassword)} /> 
                         <Route path="/signup" component={withPageView(Signup)} /> 
-                        <Route path="/pricing" component={withPageView(Pricing)} />
                         <Route path="*">
                             <ErrorPage></ErrorPage>
                         </Route>
@@ -63,7 +62,6 @@ const Routes = (props) => {
                         <Route exact path="/">
                             <Redirect to="/database" />
                         </Route>
-                        <Route exact path="/pricing" component={withPageView(Pricing)} />
                         <Route exact path="/database" component={withPageView(Database)} />
                         <Route exact path="/captable" component={withPageView(Captable)} />
                         <Route exact path="/requestconnect" component={withPageView(Requestconnect)} />

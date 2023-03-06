@@ -14,7 +14,7 @@ class Section1 extends Component {
                         Unlock opportunities in the private sectors with our data platform. We update this database every week - never miss out on the hottest dealflow.
                     </h4>
                     <div className="wrap-bt-try-for-free">
-                        <Link to="/pricing" className="bt-try-for-free-sec1">Try for Free</Link>
+                        <Link to="/login" className="bt-try-for-free-sec1">Try for Free</Link>
                     </div>
                     <div className="img-sec-data-platform-sample">
                         <img src={sampledata} alt=""/>

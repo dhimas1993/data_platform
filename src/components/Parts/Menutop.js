@@ -61,7 +61,7 @@ class Menutop extends Component {
                         {/* main menu desktop */}
                         <div className="wrap-main-menu-desktop">
                             <ul className="main-menu-dekstop">
-                                <li><Link to="/pricing">Pricing</Link></li>
+                             
                                 <li className="bt-login-bt"><a target="_blank" href="https://api.whatsapp.com/send?phone=6281218990565&text=Hallo%20Startupindonesia%20Team">Contact Us</a></li>
                                 {
                                     this.state.id !== "" 
@@ -84,7 +84,7 @@ class Menutop extends Component {
                         </div>
                         <div className="main-menu-mobile">
                             <ul>
-                                <li><Link to="/pricing">Pricing</Link></li>
+                             
                                 <li className="custom-bt-mn-mob2 "><a target="_blank" href="https://api.whatsapp.com/send?phone=6281218990565&text=Hallo%20Startupindonesia%20Team">Contact Us</a></li>
                                 {
                                     this.state.id !== "" 
