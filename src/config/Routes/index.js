@@ -49,6 +49,7 @@ const Routes = (props) => {
                     <Switch>
                         <Route exact path="/" component={withPageView(Home)} />
                         <Route path="/login" component={withPageView(Login)} />
+                        <Route path="/pricing" component={withPageView(Pricing)} />
                         <Route path="/forgotpassword" component={withPageView(ForgotPassword)} />
                         <Route path="/confirmation-email/:id" component={withPageView(ConfirmationEmail)} /> 
                         <Route path="/confirmation-password/:id" component={withPageView(ConfirmationPassword)} /> 

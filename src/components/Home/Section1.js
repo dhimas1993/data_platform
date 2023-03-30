@@ -6,6 +6,9 @@ class Section1 extends Component {
     render() {
         return (
             <div>
+                <div className='tw-bg-red-500'>
+                    
+                </div>
                 <div className="wrap-section-1-data-plat">
                     <h1 className="heading-title-section-1-dp">
                         Discover <span>Investable Startups</span> <br/> Across Indonesia 
@@ -14,7 +17,7 @@ class Section1 extends Component {
                         Unlock opportunities in the private sectors with our data platform. We update this database every week - never miss out on the hottest dealflow.
                     </h4>
                     <div className="wrap-bt-try-for-free">
-                        <Link to="/login" className="bt-try-for-free-sec1">Try for Free</Link>
+                        <Link to="/pricing" className="bt-try-for-free-sec1">Try for Free</Link>
                     </div>
                     <div className="img-sec-data-platform-sample">
                         <img src={sampledata} alt=""/>

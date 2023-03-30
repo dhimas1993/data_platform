@@ -58,7 +58,7 @@ function Login (){
             </div>
             <div className="dont-have-account">
                 <h3 className="title-donthaveaccount">Don't have account ? </h3>
-                <Link to="/Signup" className="bt-signup-log">Signup</Link>
+                <Link to="/signup" className="bt-signup-log">Signup</Link>
             </div>
             
             <div className="wrap-login-page">
